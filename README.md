@@ -540,11 +540,11 @@ A GPU is not required.
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/Marushika05/Customer-Churn-Prediction-Segmentation>
 cd customer_intelligence
 ```
 
-Replace `<YOUR_REPOSITORY_URL>` with the actual GitHub repository URL.
+
 
 ### Step 2: Create a Virtual Environment
 
