@@ -1,0 +1,53 @@
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+.cache/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*tenant_keys*.json
+*.key
+*.pem
+
+# Raw datasets
+data/raw/
+**/data/raw/
+*.xls
+*.xlsx
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Trained models and binary artifacts
+*.joblib
+*.pkl
+*.pickle
+
+# Generated archives and downloads
+*.zip
+wheels/
+
+# Temporary files
+*.log
+.DS_Store
+# SQLite runtime files
+*.db-shm
+*.db-wal
+
+# Reproducibility outputs (duplicate experiment)
+results/reproducibility/
+
+# Generated customer-level observations
+results/**/train_observations.csv
+results/**/validation_observations.csv
+results/**/test_observations.csv
+results/**/held_out_predictions.csv

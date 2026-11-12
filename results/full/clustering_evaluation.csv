@@ -1,0 +1,3 @@
+n_clusters,noise_share,silhouette,davies_bouldin,metric_population,silhouette_n,algorithm,status,assignment,eps,min_samples
+2,0.0,0.4401049052876322,0.8582994135768567,non-noise training observations,1500,agglomerative,valid,nearest training centroid in scaled log-RFM; Ward approximation,,
+2,0.039930176740126555,0.2975061256797653,1.0536535119824437,non-noise training observations,1500,dbscan,valid,nearest training core within fitted eps; otherwise noise (-1),0.4151986557015725,10.0

@@ -1,0 +1,11 @@
+segment,customers,median_recency,median_frequency,median_monetary,observed_churn_rate,interpretation,algorithm,population,mean_predicted_risk,total_retention_priority
+0,3573,140.40208333333334,2.0,485.98,0.7528687377553877,Lapsed / low spend / frequent,agglomerative,training,,
+1,1010,38.59027777777778,10.0,3562.41,0.27623762376237626,Recent / high spend / frequent,agglomerative,training,,
+0,3703,283.24652777777777,2.0,454.12,0.6959222252227923,Lapsed / low spend / occasional,agglomerative,held-out test; RF risk,0.7948466057829874,1872034.5675708519
+1,1553,32.58263888888889,9.0,3374.68,0.2524146812620734,Recent / high spend / frequent,agglomerative,held-out test; RF risk,0.3534229838812579,2454178.7930947435
+-1,183,11.483333333333333,9.0,8797.26,0.3551912568306011,Noise / unusual purchasing patterns,dbscan,training,,
+0,2909,103.26041666666667,4.0,1217.99,0.56651770367824,Recent / high spend / frequent,dbscan,training,,
+1,1491,175.50208333333333,1.0,239.12,0.8423876592890678,Lapsed / low spend / occasional,dbscan,training,,
+-1,365,9.442361111111111,13.0,6414.32,0.336986301369863,Noise / unusual purchasing patterns,dbscan,held-out test; RF risk,0.39291654189788366,1151486.8042983927
+0,3345,112.38402777777777,4.0,1199.31,0.48310911808669654,Recent / high spend / frequent,dbscan,held-out test; RF risk,0.6045766777652722,2841414.2124442873
+1,1546,323.42291666666665,1.0,233.375,0.795601552393273,Lapsed / low spend / occasional,dbscan,held-out test; RF risk,0.864685888400105,410376.7883848803

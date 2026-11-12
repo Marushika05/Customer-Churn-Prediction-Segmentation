@@ -1,0 +1,82 @@
+{
+  "dataset": "UCI Online Retail II (complete workbook)",
+  "provisional": false,
+  "source_url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+  "input_path": "C:\\Users\\marus\\OneDrive\\Desktop\\customer_intelligence\\data\\raw\\online_retail_II.xlsx",
+  "sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "sheets": {
+    "Year 2009-2010": 525461,
+    "Year 2010-2011": 541910
+  },
+  "raw_rows": 1067371,
+  "cleaning": {
+    "rows_in": 1067371,
+    "rows_kept": 1021252,
+    "dropped": {
+      "non_product_codes": 5930,
+      "invalid_quantity_or_price": 6152,
+      "exact_duplicates": 34037
+    },
+    "sale_lines": 1003338,
+    "cancellation_lines": 17914,
+    "customers": 5875,
+    "anonymous_line_share": 0.22236333441697054,
+    "date_min": "2009-12-01 07:45:00",
+    "date_max": "2011-12-09 12:50:00"
+  },
+  "observation_end_exclusive": "2011-12-09 00:00:00",
+  "excluded_anonymous_rows_from_models": 227089,
+  "snapshot_code_hash": "7a0a3e7dd1f7",
+  "split": {
+    "train_cutoff": "2011-03-14 00:00:00",
+    "validation_cutoff": "2011-06-12 00:00:00",
+    "test_cutoff": "2011-09-10 00:00:00",
+    "horizon_days": 90,
+    "train_label_end": "2011-06-12 00:00:00",
+    "validation_label_end": "2011-09-10 00:00:00",
+    "test_label_end": "2011-12-09 00:00:00",
+    "rows": {
+      "train": 4583,
+      "validation": 4951,
+      "test": 5256
+    }
+  },
+  "seed": 42,
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.10.3",
+    "joblib": "1.5.1"
+  },
+  "class_prevalence": {
+    "train": 0.64782893301331,
+    "validation": 0.6772369218339729,
+    "test": 0.5648782343987824
+  },
+  "evaluation": "all customers at each cutoff; same customer may recur across dates; no ID as predictor",
+  "feature_columns": [
+    "recency_days",
+    "frequency",
+    "monetary",
+    "avg_order_value",
+    "tenure_days",
+    "avg_gap_days",
+    "gap_std_days",
+    "recency_gap_ratio",
+    "orders_30d",
+    "orders_90d",
+    "spend_30d",
+    "spend_90d",
+    "spend_trend",
+    "n_products",
+    "avg_basket_items",
+    "return_rate",
+    "single_order"
+  ],
+  "test_observations_sha256": "9d1c3ac6693a61b40639fa1ea8aef150bece716609f0ea8bc89c13b1d2effa64",
+  "fit_population": "training cutoff only; no validation/test clustering or preprocessing fit",
+  "deployment_refit": false
+}

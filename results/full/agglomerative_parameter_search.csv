@@ -1,0 +1,6 @@
+k,n_clusters,noise_share,silhouette,davies_bouldin,metric_population,silhouette_n
+2,2,0.0,0.4401049052876322,0.8582994135768567,non-noise training observations,1500
+3,3,0.0,0.28843419319737607,1.079391778626334,non-noise training observations,1500
+4,4,0.0,0.32800721923967,0.9797471597232355,non-noise training observations,1500
+5,5,0.0,0.29216314847861113,1.0607191802321068,non-noise training observations,1500
+6,6,0.0,0.22568671919139133,1.1490836688523534,non-noise training observations,1500

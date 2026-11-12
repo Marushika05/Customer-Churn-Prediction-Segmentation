@@ -1,0 +1,25 @@
+test_all_missing_feature_dimensions (test_core.CoreTests.test_all_missing_feature_dimensions) ... ok
+test_all_noise_fit_and_assignment_are_safe (test_core.CoreTests.test_all_noise_fit_and_assignment_are_safe) ... ok
+test_auc_uses_scores (test_core.CoreTests.test_auc_uses_scores) ... ok
+test_blank_nonfinite_fractional (test_core.CoreTests.test_blank_nonfinite_fractional) ... ok
+test_chronological_purging (test_core.CoreTests.test_chronological_purging) ... ok
+test_cleaning_invalid_and_anonymous (test_core.CoreTests.test_cleaning_invalid_and_anonymous) ... ok
+test_cluster_encoding_has_noise_category (test_core.CoreTests.test_cluster_encoding_has_noise_category) ... ok
+test_degenerate_clustering (test_core.CoreTests.test_degenerate_clustering) ... ok
+test_excel_both_sheets_aliases (test_core.CoreTests.test_excel_both_sheets_aliases) ... ok
+test_future_does_not_change_features (test_core.CoreTests.test_future_does_not_change_features) ... ok
+test_hand_calculated_rfm (test_core.CoreTests.test_hand_calculated_rfm) ... ok
+test_labels_and_exact_cutoff_boundary (test_core.CoreTests.test_labels_and_exact_cutoff_boundary) ... ok
+test_mixed_supported_dates (test_core.CoreTests.test_mixed_supported_dates) ... ok
+test_noise_and_undefined_metrics (test_core.CoreTests.test_noise_and_undefined_metrics) ... ok
+test_too_short_fails (test_core.CoreTests.test_too_short_fails) ... ok
+test_chronology_and_no_target_features (test_saved_results.SavedResultsTests.test_chronology_and_no_target_features) ... ok
+test_frozen_models_reproduce_probabilities_and_metrics (test_saved_results.SavedResultsTests.test_frozen_models_reproduce_probabilities_and_metrics) ... ok
+test_full_workbook_and_shared_cohort (test_saved_results.SavedResultsTests.test_full_workbook_and_shared_cohort) ... ok
+test_original_files_preserved (test_saved_results.SavedResultsTests.test_original_files_preserved) ... ok
+test_preprocessing_fitted_only_on_training (test_saved_results.SavedResultsTests.test_preprocessing_fitted_only_on_training) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.089s
+
+OK
