@@ -12,11 +12,12 @@ import streamlit as st
 
 from backend import config
 from frontend import api_client as api
+from frontend.research_experiments import render as page_research_experiments
 
 CUR = config.CURRENCY
 RISK_COLORS = {"Low": "#2e9e5b", "Medium": "#e0a31b", "High": "#d64545"}
 PAGES = ["Dashboard", "Customer Intelligence", "Segmentation", "Recommendations", "Model Performance",
-         "Data Explorer", "Tenant Management"]
+         "Data Explorer", "Tenant Management", "Research Experiments"]
 
 st.set_page_config(page_title="Customer Intelligence", page_icon="📊", layout="wide")
 
@@ -489,6 +490,11 @@ def page_tenants():
 # ------------------------------------------------------------------ shell
 def main():
     st.sidebar.title("📊 Customer Intelligence")
+    page = st.sidebar.radio("Navigate", PAGES, key="page")
+    if page == "Research Experiments":
+        st.sidebar.caption("Saved academic results; independent of tenants and API availability.")
+        page_research_experiments()
+        return
     h = api.health()
     if not h:
         st.sidebar.error("API offline")
@@ -504,10 +510,12 @@ def main():
         cur_name = next(n for n, i in by_name.items() if i == st.session_state.tid)
         pick = st.sidebar.selectbox("Active tenant", list(by_name), index=list(by_name).index(cur_name))
         st.session_state.tid = by_name[pick]
-    page = st.sidebar.radio("Navigate", PAGES if ids else ["Tenant Management"], key="page")
     st.sidebar.caption("Churn, segments, recommendations and 90-day spend predictions. Each tenant's data is isolated by API key.")
     if page == "Tenant Management":
         guard(page_tenants)
+        return
+    if not ids:
+        st.info("No tenants available. Open Tenant Management or Research Experiments.")
         return
     if "tid" not in st.session_state:
         return
